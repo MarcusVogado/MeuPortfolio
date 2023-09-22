@@ -25,7 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/global.css",
+              "src/assets/css/index.css",
+              "src/assets/css/normalize.css",
+              "src/assets/css/globalFonts.css",
+              "src/assets/css/contact.css"
             ],
             "scripts": []
           },
@@ -94,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

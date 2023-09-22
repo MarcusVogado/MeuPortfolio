@@ -1,0 +1,23 @@
+@import url(normalize.css);
+@import url(globalFonts.css);
+:root {
+    --primary-color: #add8e6;
+    --secondary-color: #f0f8ff; 
+    --backgroundcolor: #2b2a2c;       
+    --text-color:#fff;
+    --link-color: #9e86ff;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --btn-bg-color-gradient: linear-gradient(
+        45deg,
+        #9b34ef 0%,
+        #490cb0 20%,
+        transparent 50%
+      );
+}
+body{
+    margin: 0;
+    padding: 0;    
+    background-color: var(--backgroundcolor);   
+}
+
+  
