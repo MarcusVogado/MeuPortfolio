@@ -1,12 +1,11 @@
 import { Component,OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-component',
-  templateUrl: './nav-component.component.html',
-  styleUrls: ['./nav-component.component.css',]
+  selector: 'app-aside-bar',
+  templateUrl: './aside-bar.component.html',
+  styleUrls: ['./aside-bar.component.css']
 })
-export class NavComponentComponent implements OnInit {
- 
+export class AsideBarComponent implements OnInit{
   constructor() {
    
   }
@@ -23,6 +22,3 @@ export class NavComponentComponent implements OnInit {
     window.open("https://marcusvogado.com/projetos","_blank");
   }
 }
-
-  
-
