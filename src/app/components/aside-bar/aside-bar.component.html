@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcus Vogado</title>   
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
-
-<body>
+<body>   
     <nav class="navbar__container">
         <div class="navbar__content">
             <picture class="navbar__content-photoPerfil">
@@ -16,7 +6,7 @@
                     alt="Foto do Marcus Vogado assinando um documento, marcus de pele parda, usando terno cor azul escuro e gravata rosa com detalhes brancos">
                 <span>Marcus Vogado</span>
             </picture>
-            <div class="navbar__content-itens" onclick="">
+            <div class="navbar__content-itens" [routerLink]="['summary']">
                 <div class="navbar__content-item">
                     <img src="assets/images/menuIcons/certificate.png" alt="">
                     <span>
@@ -24,7 +14,7 @@
                     </span>
                 </div>
             </div>
-            <div class="navbar__content-itens" onclick="">
+            <div class="navbar__content-itens" [routerLink]="['about']">
                 <div class="navbar__content-item">
                     <img src="assets/images/menuIcons/face.png" alt="">
                     <span>
@@ -32,7 +22,7 @@
                     </span>
                 </div>
             </div>
-            <div class="navbar__content-itens" (click)="goToProjetos()">
+            <div class="navbar__content-itens" [routerLink]="['projects']">
                 <div class="navbar__content-item">
                     <img src="assets/images/menuIcons/software-development.png" alt="">
                     <span>
@@ -41,16 +31,15 @@
                 </div>
             </div>           
            
-            <div class="navbar__content-itens" >
+            <div class="navbar__content-itens" [routerLink]="['blog']">
                 <div class="navbar__content-item">
                     <img src="assets/images/menuIcons/blogging.png" alt="">
                     <span>
                         Blog
                     </span>
                 </div>
-            </div>
-          
-            <div class="navbar__content-itens">
+            </div>          
+            <div class="navbar__content-itens" [routerLink]="['contact']">
                 <div class="navbar__content-item">
                     <img src="assets/images/menuIcons/email.png" alt="">
                     <span>
@@ -61,20 +50,14 @@
         </div>
         <footer class="footer__container">
             <div class="footer__content-item-socialmedia">
-                <img src="assets/images/socialMedia/github.png" alt="logo do git hub" onclick="">
-                <img src="assets/images/socialMedia/linkedin.png" alt="logo do linkedin" onclick="">
+                <img src="assets/images/socialMedia/github.png" alt="logo do github" (click)="goToGithub()">
+                <img src="assets/images/socialMedia/linkedin.png" alt="logo do linkedin" (click)="goToLinkedin()">
             </div>
             <div class="footer__content-item-copyright">
                 <p>2023 &copy; Marcus Vogado</p>
                 <p>Todos os direitos reservados</p>
             </div>
         </footer>
-    </nav>
-    <main class="main__container">
-        <div class="main__container-title">
-            <p>Olá, eu sou Marcus Vogado<span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-        </div>
-    </main>       
+    </nav>       
 </body>
 
-</html>
