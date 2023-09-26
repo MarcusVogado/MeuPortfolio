@@ -11,12 +11,15 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { CardProjetctComponent } from './components/card-projetct/card-projetct.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BlogContentComponent } from './pages/blog-content/blog-content.component';
+import { CardBlogComponent } from './components/card-blog/card-blog.component';
+import { BlogSelectContentComponent } from './pages/blog-select-content/blog-select-content.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,    
-    AsideBarComponent, AboutComponent, SummaryComponent, ProjectsComponent, BlogComponent, CardProjetctComponent, ContactComponent
+    AsideBarComponent, AboutComponent, SummaryComponent, ProjectsComponent, BlogComponent, CardProjetctComponent, ContactComponent, BlogContentComponent, CardBlogComponent, BlogSelectContentComponent
   ],
   imports: [
     BrowserModule,

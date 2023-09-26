@@ -91,54 +91,7 @@
 /*NAV HEADER MEDIA QUERIES*/
 
 
-/*MAIN*/
-.main__container {
-    display: flex;
-    margin-left: 260px;
-    height: 100vh;
-    justify-content: center;
-}
 
-.main__container-title {
-    display: flex;
-    width: 500px;
-    height: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 90px;
-    font-family: Roboto;
-    color: var(--text-color);
-    font-size: 1.5rem;
-
-}
-
-.main__container-title p {
-
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    overflow: hidden;
-    text-transform: uppercase;
-}
-
-.main__container-title p span.typed-text {
-    font-weight: normal;
-    color: var(--primary-color);
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.main__container-title p span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-}
-
-.main__container-title p span.cursor.typing {
-    animation: none;
-}
 
 @keyframes blink {
     0% {

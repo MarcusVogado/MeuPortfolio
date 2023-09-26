@@ -4,8 +4,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { AppComponent } from './app.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BlogContentComponent } from './pages/blog-content/blog-content.component';
 
 const routes: Routes = [
   {
@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
+  {
+      path: 'blog-content/:id',
+      component: BlogContentComponent
+  }
 ];
 
 @NgModule({

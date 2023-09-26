@@ -1,0 +1,41 @@
+@import url(../../../assets/css/global.css);
+:host{
+    display: block;   
+    height: 280px;
+}
+.card-content{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;    
+    width: 250px;    
+    height: 100%;
+    gap: 5px;  
+    border: 2px solid white ;
+    box-shadow: 1px 1px 1px whitesmoke;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.card-content>img{
+    width: 100%;
+    height: 200px;    
+    border-bottom: 1px solid white;      
+}
+.card-content>h1{
+    margin-top: 5px;
+    font-family: Luckiest;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card-content>p{
+    text-align: center;
+    color:var(--primary-color);
+    font-family:Roboto;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.card-content:hover{
+    cursor: pointer;
+    border: 2px solid var(--primary-color) ;
+    box-shadow: 0px 0px 3px 3px  var(--primary-color);
+}
