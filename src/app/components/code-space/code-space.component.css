@@ -1,0 +1,5 @@
+@import url(../../../assets/css/global.css);
+p{
+    background-color: black;
+    color: var(primary-color);
+}

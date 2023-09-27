@@ -6,12 +6,13 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogContentComponent } from './pages/blog-content/blog-content.component';
+import { CsharpContentComponent } from './pages/csharp-content/csharp-content.component';
 
 const routes: Routes = [
   {
     path: '',
     component: SummaryComponent
-  }, 
+  },
   {
     path: 'summary',
     component: SummaryComponent
@@ -23,7 +24,7 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
-  },  
+  },
   {
     path: 'blog',
     component: BlogComponent
@@ -33,9 +34,13 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-      path: 'blog-content/:id',
-      component: BlogContentComponent
-  }
+    path: 'blog-content/:id',
+    component: BlogContentComponent
+  },
+  {
+    path: 'csharp',
+    component: CsharpContentComponent
+  },
 ];
 
 @NgModule({

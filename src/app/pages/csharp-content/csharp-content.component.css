@@ -1,0 +1,14 @@
+.main__blog-container{
+    display: flex;
+    margin: 30px 0px 0px 270px; 
+    justify-content: center;  
+    gap: 26px;    
+    flex-wrap: wrap;    
+}
+
+@media screen and (max-width:759px) {
+    .main__blog-container {
+        margin: 30px 0px 0px 0px;;
+    }
+    
+}

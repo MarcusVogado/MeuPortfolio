@@ -14,12 +14,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BlogContentComponent } from './pages/blog-content/blog-content.component';
 import { CardBlogComponent } from './components/card-blog/card-blog.component';
 import { BlogSelectContentComponent } from './pages/blog-select-content/blog-select-content.component';
+import { CsharpContentComponent } from './pages/csharp-content/csharp-content.component';
+import { CodeSpaceComponent } from './components/code-space/code-space.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,    
-    AsideBarComponent, AboutComponent, SummaryComponent, ProjectsComponent, BlogComponent, CardProjetctComponent, ContactComponent, BlogContentComponent, CardBlogComponent, BlogSelectContentComponent
+    AsideBarComponent, AboutComponent, SummaryComponent, ProjectsComponent, BlogComponent, CardProjetctComponent, ContactComponent, BlogContentComponent, CardBlogComponent, BlogSelectContentComponent, CsharpContentComponent, CodeSpaceComponent
   ],
   imports: [
     BrowserModule,
