@@ -14,7 +14,7 @@
 
 .navbar__content {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .navbar__content-photoPerfil {
@@ -58,13 +58,13 @@
     justify-content: center;
     box-sizing: border-box;
     align-items: center;
-    width: 100%;    
+    width: 100%;
     font-family: Roboto;
-    color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: start;
     font-weight: bold;
     letter-spacing: 2px;
+    flex-wrap: nowrap;
     gap: 16px;
     padding: 12px;
     border-bottom: .3px solid var(--primary-color);
@@ -82,7 +82,7 @@
 
 .navbar__content-item {
     width: 140px;
-    display: flex;    
+    display: flex;
     justify-content: stretch;
     align-items: center;
     gap: 16px;
@@ -90,6 +90,11 @@
     color: var(--text-color);
 }
 
+.activated-item {
+    font-size: 1rem;
+    color: var(--primary-color) !important;
+
+}
 
 /*NAV HEADER MEDIA QUERIES*/
 
@@ -125,9 +130,7 @@
     }
 }
 
-@keyframes transationSide-Menu {
-    
-}
+@keyframes transationSide-Menu {}
 
 /*FOOTER*/
 

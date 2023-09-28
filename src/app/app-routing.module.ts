@@ -11,7 +11,8 @@ import { CsharpContentComponent } from './pages/csharp-content/csharp-content.co
 const routes: Routes = [
   {
     path: '',
-    component: SummaryComponent
+    component: SummaryComponent,
+    pathMatch:'full'
   },
   {
     path: 'summary',
@@ -41,6 +42,10 @@ const routes: Routes = [
     path: 'csharp',
     component: CsharpContentComponent
   },
+  {
+    path:'**',
+    redirectTo:''    
+  }
 ];
 
 @NgModule({

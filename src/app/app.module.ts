@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideBarComponent } from './components/aside-bar/aside-bar.component';
@@ -20,14 +20,30 @@ import { CodeSpaceComponent } from './components/code-space/code-space.component
 
 @NgModule({
   declarations: [
-    AppComponent,    
-    AsideBarComponent, AboutComponent, SummaryComponent, ProjectsComponent, BlogComponent, CardProjetctComponent, ContactComponent, BlogContentComponent, CardBlogComponent, BlogSelectContentComponent, CsharpContentComponent, CodeSpaceComponent
+    AppComponent,
+    AsideBarComponent,
+    AboutComponent,
+    SummaryComponent,
+    ProjectsComponent,
+    BlogComponent,
+    CardProjetctComponent,
+    ContactComponent,
+    BlogContentComponent,
+    CardBlogComponent,
+    BlogSelectContentComponent,
+    CsharpContentComponent,
+    CodeSpaceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
