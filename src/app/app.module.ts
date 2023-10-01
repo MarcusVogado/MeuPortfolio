@@ -17,7 +17,7 @@ import { BlogSelectContentComponent } from './pages/blog-select-content/blog-sel
 import { CsharpContentComponent } from './pages/csharp-content/csharp-content.component';
 import { CodeSpaceComponent } from './components/code-space/code-space.component';
 
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,8 @@ import { CodeSpaceComponent } from './components/code-space/code-space.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

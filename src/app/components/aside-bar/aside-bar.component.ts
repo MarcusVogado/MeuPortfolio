@@ -1,28 +1,53 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { SidebarOpenAnimation, SidebarCloseAnimation } from "./animation-menu";
+import { transition, trigger, useAnimation } from "@angular/animations";
+
+const animationParams = {
+  menuWidth: "260px",
+  animationStyle: "500ms ease"
+};
 
 @Component({
   selector: 'app-aside-bar',
   templateUrl: './aside-bar.component.html',
-  styleUrls: ['./aside-bar.component.css']
+  styleUrls: ['./aside-bar.component.css'],
+  animations: [
+    trigger("sideMenu", [
+      transition(":enter", [
+        useAnimation(SidebarOpenAnimation, {
+          params: {
+            ...animationParams
+          }
+        })
+      ]),
+      transition(":leave", [
+        useAnimation(SidebarCloseAnimation, {
+          params: {
+            ...animationParams
+          }
+        })
+      ])
+    ])
+  ]
 })
 export class AsideBarComponent implements OnInit {
- 
+  isOpen = false;
   
+  
+  
+ 
   constructor() {
   }
   ngOnInit(): void {
-
+    this.checkScreenSize();
   }
- 
-  goToProjetos() {
-    window.open("https://marcusvogado.com/projetos", "_blank");
-  }
-  //Links Social Media Footer
-  goToLinkedin() {
-    window.open("https://www.linkedin.com/in/marcus-vogado/", "_blank");
-  }
-  goToGithub() {
-    window.open("https://github.com/MarcusVogado", "_blank");
+  checkScreenSize(): void {
+    this.isOpen = window.innerWidth > 768;
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.checkScreenSize();
+  }
+  
 }

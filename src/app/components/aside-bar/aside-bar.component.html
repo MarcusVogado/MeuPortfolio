@@ -1,68 +1,71 @@
-<body>
-    <nav class="navbar__container">
-        <div class="navbar__content">
-            <picture class="navbar__content-photoPerfil">
-                <img src="assets/images/perfil/perfilMarcusVogado.jpg"
-                    alt="Foto do Marcus Vogado assinando um documento, marcus de pele parda, usando terno cor azul escuro e gravata rosa com detalhes brancos">
-                <span>Marcus Vogado</span>
-            </picture>
-            <div class="navbar__content-itens" [routerLink]="['/summary']">
-                <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
-                    [routerLinkActiveOptions]="{exact:true}">
-                    <img src="assets/images/menuIcons/certificate.png" alt="">
-                    <span>
-                        Resumo
-                    </span>
-                </div>
-            </div>
-            <div class="navbar__content-itens" [routerLink]="['/about']">
-                <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
-                    [routerLinkActiveOptions]="{exact:true}">
-                    <img src="assets/images/menuIcons/face.png" alt="">
-                    <span>
-                        Quem sou
-                    </span>
-                </div>
-            </div>
-            <div class="navbar__content-itens" [routerLink]="['/projects']">
-                <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
-                    [routerLinkActiveOptions]="{exact:true}">
-                    <img src="assets/images/menuIcons/software-development.png" alt="">
-                    <span>
-                        Projetos
-                    </span>
-                </div>
-            </div>
-
-            <div class="navbar__content-itens" [routerLink]="['/blog']">
-                <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
-                    [routerLinkActiveOptions]="{exact:true}">
-                    <img src="assets/images/menuIcons/blogging.png" alt="">
-                    <span>
-                        Blog
-                    </span>
-                </div>
-            </div>
-            <div class="navbar__content-itens" [routerLink]="['/contact']" >
-                <div class="navbar__content-item"
-                [routerLinkActive]="['activated-item']"
+<div class="menu-trigger" *ngIf="!isOpen" (click)="isOpen = !isOpen">
+    <i class="gg-push-chevron-right-o"></i>
+</div>
+<div class="side-menu" *ngIf="isOpen" [@sideMenu]>
+    <div class="menu-close" (click)="isOpen = !isOpen">
+        <i class="gg-push-chevron-left-o"></i>
+    </div>
+    <div class="menu-item">
+        <picture class="navbar__content-photoPerfil">
+            <img src="assets/images/perfil/perfilMarcusVogado.jpg"
+                alt="Foto do Marcus Vogado assinando um documento, marcus de pele parda, usando terno cor azul escuro e gravata rosa com detalhes brancos">
+            <span>Marcus Vogado</span>
+        </picture>
+        <div class="navbar__content-itens" [routerLink]="['/summary']">
+            <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
                 [routerLinkActiveOptions]="{exact:true}">
-                    <img src="assets/images/menuIcons/email.png" alt="">
-                    <span>
-                        Contato
-                    </span>
-                </div>
+                <img src="assets/images/menuIcons/certificate.png" alt="">
+                <span>
+                    Resumo
+                </span>
+            </div>
+        </div>
+        <div class="navbar__content-itens" [routerLink]="['/about']">
+            <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
+                [routerLinkActiveOptions]="{exact:true}">
+                <img src="assets/images/menuIcons/face.png" alt="">
+                <span>
+                    Quem sou
+                </span>
+            </div>
+        </div>
+        <div class="navbar__content-itens" [routerLink]="['/projects']">
+            <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
+                [routerLinkActiveOptions]="{exact:true}">
+                <img src="assets/images/menuIcons/software-development.png" alt="">
+                <span>
+                    Projetos
+                </span>
+            </div>
+        </div>
+
+        <div class="navbar__content-itens" [routerLink]="['/blog']">
+            <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
+                [routerLinkActiveOptions]="{exact:true}">
+                <img src="assets/images/menuIcons/blogging.png" alt="">
+                <span>
+                    Blog
+                </span>
+            </div>
+        </div>
+        <div class="navbar__content-itens" [routerLink]="['/contact']">
+            <div class="navbar__content-item" [routerLinkActive]="['activated-item']"
+                [routerLinkActiveOptions]="{exact:true}">
+                <img src="assets/images/menuIcons/email.png" alt="">
+                <span>
+                    Contato
+                </span>
             </div>
         </div>
         <footer class="footer__container">
             <div class="footer__content-item-socialmedia">
-                <img src="assets/images/socialMedia/github.png" alt="logo do github" (click)="goToGithub()">
-                <img src="assets/images/socialMedia/linkedin.png" alt="logo do linkedin" (click)="goToLinkedin()">
+                <img src="assets/images/socialMedia/github.png" alt="logo do github">
+                <img src="assets/images/socialMedia/linkedin.png" alt="logo do linkedin">
             </div>
             <div class="footer__content-item-copyright">
                 <p>2023 &copy; Marcus Vogado</p>
                 <p>Todos os direitos reservados</p>
             </div>
         </footer>
-    </nav>
-</body>
+    </div>
+</div>
