@@ -1,27 +1,17 @@
 # MeuPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+## Angular
+Projeto está sendo desenvolvido utilizando o Framework Angular.</br>
+Onde estou aplicando todo o aprendizando em TypeScript, Html, Css..</br>
+Ele se econtra disponível em : https://marcusvogado.com
 
-## Development server
+## Telas do Portfólio
+### Página Inicial
+<img src="https://github.com/MarcusVogado/MeuPortfolio/assets/107502578/991c3a66-019b-49d9-a362-f5520fe3d664"/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Mobile
+![image](https://github.com/MarcusVogado/MeuPortfolio/assets/107502578/e969486e-46f7-4f4e-b911-6981480bec7c)
 
-## Code scaffolding
+### Menu
+![image](https://github.com/MarcusVogado/MeuPortfolio/assets/107502578/3a1dcb42-6bc2-49f4-9510-fd93ecc8bb43)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
