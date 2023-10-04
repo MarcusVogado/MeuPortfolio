@@ -1,0 +1,11 @@
+.title__article{
+    text-transform: initial;
+    font-family:Roboto ;
+    font-weight: bold; 
+    color: var(--text-color);  
+    font-size: 1.5rem;   
+    align-self: start;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

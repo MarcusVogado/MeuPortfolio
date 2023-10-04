@@ -18,6 +18,9 @@ import { CsharpContentComponent } from './pages/csharp-content/csharp-content.co
 import { CodeSpaceComponent } from './components/code-space/code-space.component';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CardSkillsComponent } from './components/card-skills/card-skills.component';
+import { CardAcademicComponent } from './components/card-academic/card-academic.component';
+import { TitleArticleComponent } from './components/title-article/title-article.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     CardBlogComponent,
     BlogSelectContentComponent,
     CsharpContentComponent,
-    CodeSpaceComponent
+    CodeSpaceComponent,
+    CardSkillsComponent,
+    CardAcademicComponent,
+    TitleArticleComponent
   ],
   imports: [
     BrowserModule,
