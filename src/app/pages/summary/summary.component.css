@@ -11,7 +11,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 700px;
+    max-width: 700px;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
     flex-wrap: wrap;   
