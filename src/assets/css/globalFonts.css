@@ -25,3 +25,19 @@
     font-family: Luckiest;
     src: url(../fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
 }
+@font-face {
+    font-family: Open-Sans;
+    src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Open-Sans;
+    src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf);
+    font-weight:800;
+}

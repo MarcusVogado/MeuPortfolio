@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideBarComponent } from './components/aside-bar/aside-bar.component';
 
-import { AboutComponent } from './pages/about/about.component';
+
 import { SummaryComponent } from './pages/summary/summary.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
@@ -24,8 +24,7 @@ import { TitleArticleComponent } from './components/title-article/title-article.
 @NgModule({
   declarations: [
     AppComponent,
-    AsideBarComponent,
-    AboutComponent,
+    AsideBarComponent,   
     SummaryComponent,
     ProjectsComponent,
     BlogComponent,

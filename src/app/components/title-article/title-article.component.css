@@ -3,9 +3,10 @@
     font-family:Roboto ;
     font-weight: bold; 
     color: var(--text-color);  
-    font-size: 1.5rem;   
+    font-size: 1.8rem;   
     align-self: start;
     box-sizing: border-box;
     margin-top: 16px;
     margin-bottom: 16px;
+    letter-spacing: 0.2rem;
 }
