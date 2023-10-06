@@ -5,12 +5,14 @@
     left: 10px;
     color: var(--primary-color);
     position: fixed;
+    z-index: 9999;
   }
   .menu-close {
     cursor: pointer;
     text-align: right;
     padding: 10px 10px 0 0;   
     color: var(--primary-color);
+    z-index: 9999;
   }
   
   .side-menu {
@@ -20,6 +22,7 @@
     width: 250px;  
     border-right: 1px solid var(--primary-color); 
     background-color: var(--backgroundcolor);
+    z-index: 9999;
   }
   
   .menu-item {
@@ -178,42 +181,6 @@
     color: var(--primary-color) !important;
 
 }
-
-
-
-
-/*MAIN*/
-/*.main__container {
-    display: flex;
-    margin-left: 260px;
-    height: 100vh;
-    justify-content: center;
-}
-
-
-@keyframes blink {
-    0% {
-        background-color: #ccc;
-    }
-
-    49% {
-        background-color: #ccc;
-    }
-
-    50% {
-        background-color: transparent;
-    }
-
-    99% {
-        background-color: transparent;
-    }
-
-    100% {
-        background-color: #ccc;
-    }
-}
-
-
 
 /*FOOTER*/
 

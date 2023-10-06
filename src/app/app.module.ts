@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CardSkillsComponent } from './components/card-skills/card-skills.component';
 import { CardAcademicComponent } from './components/card-academic/card-academic.component';
 import { TitleArticleComponent } from './components/title-article/title-article.component';
+import { CardAboutComponent } from './components/card-about/card-about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import { TitleArticleComponent } from './components/title-article/title-article.
     CodeSpaceComponent,
     CardSkillsComponent,
     CardAcademicComponent,
-    TitleArticleComponent
+    TitleArticleComponent,
+    CardAboutComponent
   ],
   imports: [
     BrowserModule,

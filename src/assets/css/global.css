@@ -5,12 +5,12 @@
     --secondary-color: #f0f8ff; 
     --backgroundcolor: #2b2a2c;       
     --text-color:#fff;
-    --link-color: #9e86ff;
-    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --link-color: #0b8fc4;
+    --card-bg-color: linear-gradient(0deg, transparent, #089ca1);
     --btn-bg-color-gradient: linear-gradient(
         45deg,
-        #9b34ef 0%,
-        #490cb0 20%,
+        #34efe6 0%,
+        #03494e 20%,
         transparent 50%
       );
 }
