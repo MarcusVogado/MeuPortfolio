@@ -22,6 +22,7 @@ import { CardSkillsComponent } from './components/card-skills/card-skills.compon
 import { CardAcademicComponent } from './components/card-academic/card-academic.component';
 import { TitleArticleComponent } from './components/title-article/title-article.component';
 import { CardAboutComponent } from './components/card-about/card-about.component';
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,18 +1,25 @@
 @import url("../../../assets/css/global.css");
 .main__container{
     display: flex; 
-    flex-direction: column;       
-    margin: 10px 0px 0px 30%; 
-    max-width: 700px; 
+    flex-direction: column;   
+    align-items: center;  
+    justify-content: center;  
+    margin: 10px 0px 0px 260px; 
+    max-width: 100%; 
     gap: 10px;
 }
-
+.academic__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
 .skills__content{
     display: grid;
     justify-items: center;
     align-items: center;
-    max-width: 700px;
-    grid-template-columns: repeat(3, 1fr);
+    width: 800px;
+    grid-template-columns: repeat(5, 1fr);
     gap: 22px;
     flex-wrap: wrap;   
     background-color: #1f1f1f;
@@ -28,5 +35,6 @@
     }
     .skills__content{
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
