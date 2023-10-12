@@ -22,6 +22,7 @@ import { CardSkillsComponent } from './components/card-skills/card-skills.compon
 import { CardAcademicComponent } from './components/card-academic/card-academic.component';
 import { TitleArticleComponent } from './components/title-article/title-article.component';
 import { CardAboutComponent } from './components/card-about/card-about.component';
+import { CardExperienceComponent } from './components/card-experience/card-experience.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CardAboutComponent } from './components/card-about/card-about.component
     CardSkillsComponent,
     CardAcademicComponent,
     TitleArticleComponent,
-    CardAboutComponent
+    CardAboutComponent,
+    CardExperienceComponent
   ],
   imports: [
     BrowserModule,
